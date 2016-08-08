@@ -8,6 +8,7 @@
 <script type="text/javascript">
 	//刷新验证码
 	function changeImg() {
+		//为了防止浏览器中缓存图片的影响，在url后面添加一个随机参数
 		document.getElementById("validateCodeImg").src = "${pageContext.request.contextPath}/DrawImage?"
 				+ Math.random();
 	}
